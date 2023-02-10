@@ -1,0 +1,29 @@
+.footer__icons--position {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  background-color: #50515d;
+  margin-right: 10px;
+
+  &:hover,
+  &:focus {
+    background-color: $colorAccent;
+    cursor: pointer;
+    transition-duration: $transitionDuration;
+    transition-timing-function: $transitionTiming;
+  }
+  &:hover > svg,
+  &:focus > svg {
+    fill: white;
+    cursor: pointer;
+    transition-duration: $transitionDuration;
+    transition-timing-function: $transitionTiming;
+  }
+}
+
+.footer__icons--style {
+  fill: #757575;
+}

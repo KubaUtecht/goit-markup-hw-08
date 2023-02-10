@@ -1,0 +1,47 @@
+.team__icons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 206px;
+  height: 44px;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-bottom: 30px;
+  margin-top: 16px;
+
+  &--item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+
+    &:hover,
+    &:focus {
+      background-color: $colorAccent;
+      cursor: pointer;
+      transition-duration: $transitionDuration;
+      transition-timing-function: $transitionTiming;
+    }
+
+    &:hover > svg,
+    &:focus > svg {
+      fill: white;
+      cursor: pointer;
+      transition-duration: $transitionDuration;
+      transition-timing-function: $transitionTiming;
+    }
+  }
+  &--style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    fill: #757575;
+  }
+
+  &--style:nth-child(1) {
+    padding-top: 6px;
+  }
+}

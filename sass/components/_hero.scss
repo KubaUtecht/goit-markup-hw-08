@@ -1,0 +1,111 @@
+.hero {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(47, 48, 58, 0.4) 50%,
+      rgba(47, 48, 58, 0.4) 50%
+    ),
+    url("../images/header.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $colorBackground;
+  max-width: 100%;
+  height: 400px;
+  border: 1px solid #000000;
+
+  &__position {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 118px;
+  }
+
+  &__title {
+    font-weight: 900;
+    font-size: 26px;
+    color: #ffffff;
+    text-align: center;
+    width: 420px;
+    height: 84px;
+    line-height: 42px;
+  }
+
+  &__button {
+    font-weight: 700;
+    font-size: 16px;
+    background-color: #f5f4fa;
+    cursor: pointer;
+    height: 50px;
+    width: 200px;
+    border: none;
+    &:hover,
+    &:focus {
+      background-color: $colorAccent;
+      color: #ffffff;
+      transition-duration: $transitionDuration;
+      transition-timing-function: $transitionTiming;
+    }
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(47, 48, 58, 0.4) 50%,
+        rgba(47, 48, 58, 0.4) 50%
+      ),
+      url("../images/header@2x.png");
+  }
+}
+
+@media (min-device-pixel-ratio: 3),
+  (min-resolution: 192dpi),
+  (min-resolution: 3dppx) {
+  .hero {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(47, 48, 58, 0.4) 50%,
+        rgba(47, 48, 58, 0.4) 50%
+      ),
+      url("../images/header@3x.png");
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    // width: 768px;
+    height: 400px;
+
+    &__position {
+      padding-top: 118px;
+    }
+
+    &__title {
+      font-size: 26px;
+      width: 420px;
+      height: 84px;
+      line-height: 42px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero {
+    // width: 1600px;
+    height: 600px;
+
+    &__position {
+      padding-top: 200px;
+    }
+
+    &__title {
+      font-size: 44px;
+      width: 696px;
+      height: 120px;
+      line-height: 60px;
+    }
+  }
+}

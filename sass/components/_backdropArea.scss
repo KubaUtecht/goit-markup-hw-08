@@ -1,0 +1,33 @@
+.backdrop__textarea {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+  margin-right: 40px;
+
+  &--row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 12px;
+    margin: 0;
+  }
+
+  &--icon {
+    margin-left: 0;
+  }
+
+  &--style {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #757575;
+    padding-top: 1px;
+    margin-left: 6px;
+  }
+
+  &--link {
+    color: $colorAccent;
+  }
+}

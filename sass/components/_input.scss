@@ -1,0 +1,30 @@
+input:focus {
+  border-color: $colorAccent;
+  outline: none;
+  transition-duration: $transitionDuration;
+  transition-timing-function: $transitionTiming;
+}
+
+input:focus + svg {
+  transition-duration: $transitionDuration;
+  transition-timing-function: $transitionTiming;
+  fill: $colorAccent;
+}
+
+input:hover {
+  border-color: $colorAccent;
+  transition-duration: $transitionDuration;
+  transition-timing-function: $transitionTiming;
+}
+
+input:hover + svg {
+  transition-duration: $transitionDuration;
+  transition-timing-function: $transitionTiming;
+  fill: $colorAccent;
+}
+
+textarea:hover {
+  transition-duration: $transitionDuration;
+  transition-timing-function: $transitionTiming;
+  border-color: $colorAccent;
+}

@@ -1,0 +1,30 @@
+.button__list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  padding-top: 94px;
+  padding-bottom: 50px;
+
+  & > li {
+    padding-right: 8px;
+  }
+
+  &--style {
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    background-color: #f5f4fa;
+    cursor: pointer;
+    width: 93px;
+    height: 38px;
+  }
+
+  &--style:hover,
+  &--style:focus {
+    background-color: $colorAccent;
+    color: #ffffff;
+    transition-duration: $transitionDuration;
+    transition-timing-function: $transitionTiming;
+  }
+}

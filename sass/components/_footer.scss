@@ -1,0 +1,38 @@
+.footer {
+  height: 603px;
+  background-color: $colorBackground;
+
+  &__position {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    width: $containerWidthTablet;
+    height: 463px;
+    flex-direction: row;
+
+    &__position {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    width: $containerWidthDesktop;
+    height: 252px;
+    display: flex;
+    justify-content: space-between;
+
+    &__position {
+      display: flex;
+      flex-direction: row;
+      margin-left: 132px;
+    }
+  }
+}

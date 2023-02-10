@@ -1,0 +1,49 @@
+.clients__icons {
+  margin: 0;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #757575;
+  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $colorAccent;
+    cursor: pointer;
+    border-radius: 4px;
+    transition-duration: $transitionDuration;
+    transition-timing-function: $transitionTiming;
+  }
+
+  &:hover > svg,
+  &:focus > svg {
+    fill: $colorAccent;
+    cursor: pointer;
+    transition-duration: $transitionDuration;
+    transition-timing-function: $transitionTiming;
+  }
+
+  &--position {
+    margin: 16px 32px;
+    fill: #757575;
+  }
+}
+
+@media (min-width: 768px) {
+  .clients__icons {
+    width: 226px;
+
+    &--position {
+      margin: 16px 60px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .clients__icons {
+    width: 170px;
+
+    &--position {
+      margin: 16px 32px;
+    }
+  }
+}

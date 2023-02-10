@@ -1,0 +1,31 @@
+.footer__logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26;
+  color: #ffffff;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+
+  &:hover,
+  &:focus {
+    color: $colorAccent;
+    transition-duration: $transitionDuration;
+    transition-timing-function: $transitionTiming;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer__logo {
+    margin-left: 84px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer__logo {
+    padding-right: 82px;
+    margin-top: 60px;
+    margin-left: 0;
+  }
+}

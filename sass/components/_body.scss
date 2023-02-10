@@ -1,0 +1,19 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: #212121;
+  margin: 0 auto;
+  width: $containerWidth;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  body {
+    width: $containerWidthTablet;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    width: $containerWidthDesktop;
+  }
+}

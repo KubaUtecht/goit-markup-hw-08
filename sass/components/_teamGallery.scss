@@ -1,0 +1,135 @@
+.team__gallery {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.17;
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.team__image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px auto;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  &--description {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  &--part {
+    font-size: 16px;
+    color: #757575;
+    padding-top: 10px;
+  }
+}
+
+.team__gallery--item {
+  flex-basis: calc((100% - 30px) / 2);
+}
+
+.team__image--size {
+  width: 270px;
+  height: 260px;
+}
+
+@media (min-width: 768px) {
+  .team__gallery {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .team__gallery--item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+  .team__image--size {
+    width: 354px;
+    height: 374px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .team__gallery {
+    flex-wrap: nowrap;
+    width: 1600px;
+    display: flex;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .team__image {
+    margin: 0;
+    width: 270px;
+    height: 428px;
+  }
+
+  .team__image--size {
+    width: 270px;
+    height: 428px;
+  }
+}
+
+.john1 {
+  content: url("../images/1john.png");
+}
+
+.john2 {
+  content: url("../images/2john.png");
+}
+
+.john3 {
+  content: url("../images/3john.png");
+}
+
+.john4 {
+  content: url("../images/4john.png");
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .john1 {
+    content: url("../images/1john@2x.png");
+  }
+  .john2 {
+    content: url("../images/2john@2x.png");
+  }
+  .john3 {
+    content: url("../images/3john@2x.png");
+  }
+  .john4 {
+    content: url("../images/4john@2x.png");
+  }
+}
+
+@media (min-device-pixel-ratio: 3),
+  (min-resolution: 192dpi),
+  (min-resolution: 3dppx) {
+  .john1 {
+    content: url("../images/1john@3x.png");
+  }
+  .john2 {
+    content: url("../images/2john@3x.png");
+  }
+  .john3 {
+    content: url("../images/3john@3x.png");
+  }
+  .john4 {
+    content: url("../images/4john@3x.png");
+  }
+}

@@ -1,0 +1,15 @@
+.backdrop__input {
+  position: relative;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  height: 40px;
+  width: 448px;
+  padding: 0px;
+  padding-left: 30px;
+
+  &--icon {
+    position: absolute;
+    left: 12px;
+    bottom: 11px;
+  }
+}

@@ -1,0 +1,46 @@
+.clients {
+  width: $sectionWidth;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    color: #212121;
+    padding-bottom: 50px;
+    margin: 0;
+  }
+
+  &__position {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: 768px) {
+  .clients {
+    width: $containerWidthTablet;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1200px) {
+  .clients {
+    width: 1170px;
+    height: 184px;
+    margin-top: 94px;
+    margin-left: 215px;
+    margin-right: 215px;
+    margin-bottom: 94px;
+
+    &__position {
+      flex-wrap: nowrap;
+      margin-bottom: 0;
+    }
+  }
+}

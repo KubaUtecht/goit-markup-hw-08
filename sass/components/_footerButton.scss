@@ -1,0 +1,46 @@
+.footer__button {
+  position: absolute;
+  right: 140px;
+  background-color: $colorAccent;
+  cursor: pointer;
+  height: 50px;
+  width: 200px;
+  border: none;
+  color: #eeeeee;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 0;
+
+  &--title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    padding-right: 28px;
+  }
+
+  &--icon {
+    position: absolute;
+    right: 26px;
+    bottom: 12px;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer__button {
+    position: relative;
+    left: 124px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer__button {
+    position: absolute;
+    top: 96px;
+    left: 368px;
+    // right: 140px;
+    // left: 124px;
+  }
+}

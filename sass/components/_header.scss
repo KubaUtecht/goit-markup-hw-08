@@ -1,0 +1,46 @@
+.header {
+  width: $containerWidth;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid #ececec;
+
+  &__logo {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26;
+    margin-left: 15px;
+    color: #000000;
+    cursor: pointer;
+    text-decoration: none;
+    &:hover,
+    &:focus {
+      color: $colorAccent;
+      text-decoration: none;
+      transition-duration: $transitionDuration;
+      transition-timing-function: $transitionTiming;
+    }
+  }
+
+  &__logo--part {
+    color: $colorAccent;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    width: $containerWidthTablet;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header {
+    width: $containerWidthDesktop;
+
+    &__logo {
+      margin-left: 215px;
+    }
+  }
+}

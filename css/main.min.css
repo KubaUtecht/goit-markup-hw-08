@@ -148,8 +148,8 @@ body {
   transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
 }
 .menu-container.is-open {
-  -webkit-transform: translateX(20%);
-  transform: translateX(20%);
+  -webkit-transform: translateX(50%);
+  transform: translateX(50%);
   width: 100vw;
   height: 100vh;
 }

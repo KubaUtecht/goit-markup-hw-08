@@ -148,10 +148,8 @@ body {
   transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
 }
 .menu-container.is-open {
-  -webkit-transform: translateX(50%);
-  transform: translateX(50%);
-  width: 100vw;
-  height: 100vh;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
 }
 .mobile-menu {
   padding: 0;
